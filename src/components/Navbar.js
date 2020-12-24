@@ -70,20 +70,20 @@ const Navbar = (props) => {
             {!user.auth && (
               <>
                 <Menu.Item>
-                  <Button size="large" type="primary">
-                    <Link href="/signup">
-                      <a>
-                        { t('support') }&nbsp;&nbsp;
-                        <ThunderboltOutlined style={{ margin: '0' }} />
-                      </a>
-                    </Link>
+                  <Button
+                    size="large"
+                    type="primary"
+                    onClick={() => router.push('/signup')}>
+                    { t('support') }&nbsp;&nbsp;
+                    <ThunderboltOutlined style={{ margin: '0' }} />
                   </Button>
                 </Menu.Item>
                 <Menu.Item>
-                  <Button size="large" type="text">
-                    <Link href="/login">
-                      <a>{ t('login') }</a>
-                    </Link>
+                  <Button
+                    size="large"
+                    type="text"
+                    onClick={() => router.push('/signup')}>
+                    { t('login') }
                   </Button>
                 </Menu.Item>
               </>
