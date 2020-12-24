@@ -1,8 +1,6 @@
 import { wrapper } from 'src/store';
 
-import 'antd/dist/antd.css';
-import 'styles/vars.css';
-import 'styles/global.css';
+import 'styles/antd-custom.less';
 
 const App = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
