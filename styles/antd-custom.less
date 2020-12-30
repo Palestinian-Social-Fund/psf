@@ -1,7 +1,7 @@
 @import "~antd/dist/antd.less";
 
-@primary-color: #434343; // black
-@link-color: #434343; // black
+@primary-color: #262626; // black
+@link-color: @primary-color; // black
 @success-color: #52c41a; // success state color
 @warning-color: #faad14; // warning state color
 @error-color: #f5222d; // error state color
@@ -13,10 +13,17 @@
 @layout-header-background: @layout-body-background;
 
 @btn-primary-color: #fff;
+@btn-font-weight: 700;
 
 @typography-title-font-weight: 700;
 
 @select-item-selected-bg: #f0f0f0;
+@font-size-base: 18px;
+@line-height-base: 1.75;
+
+@height-base: 40px;
+@height-lg: 50px;
+@height-sm: 30px;
 
 *,
 *:before,
@@ -33,6 +40,14 @@ body {
 
 header {
   border-bottom: thin solid #f0f0f0;
+}
+
+footer {
+  background-color: @primary-color;
+}
+
+p {
+  font-size: 21px;
 }
 
 .menu-row {
@@ -57,11 +72,23 @@ header {
   min-height: calc(100vh - 144px);
 }
 
-.ant-layout.container {
+.container {
   width: 980px;
   max-width: 980px;
   margin: 30px auto;
   padding: 15px;
+}
+
+.gray-bg {
+  background-color: #f5f5f5;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .text-left {
