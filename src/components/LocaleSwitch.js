@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select } from 'antd';
+import { Button } from 'antd';
 import { useRouter } from 'next/dist/client/router';
 import { GlobalOutlined } from '@ant-design/icons';
 
@@ -9,7 +9,7 @@ const LocaleSwitch = () => {
   const router = useRouter();
   const { locale, locales } = router;
 
-  const handleChange = React.useCallback(
+  const handleClick = React.useCallback(
     (newLocale) => {
       router.push(router.pathname, router.pathname, { locale: newLocale });
     },
@@ -17,20 +17,12 @@ const LocaleSwitch = () => {
   );
 
   return (
-    <Select
+    <Button
       size="small"
-      className="locale-switch"
-      defaultValue={locale}
-      onChange={handleChange}
+      onClick={() => handleClick(locale === 'ar' ? 'en' : 'ar')}
     >
-      {
-        locales.map(locale => (
-          <Select.Option key={locale} value={locale}>
-            { localeNames[locale] }
-          </Select.Option>
-        ))
-      }
-    </Select>
+      { localeNames[locale] }
+    </Button>
   )
 };
 
