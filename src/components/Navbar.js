@@ -5,7 +5,6 @@ import {
   UserOutlined,
   BookOutlined,
   CreditCardOutlined,
-  ThunderboltOutlined,
 } from '@ant-design/icons'
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
@@ -71,18 +70,15 @@ const Navbar = (props) => {
               <>
                 <Menu.Item>
                   <Button
-                    size="large"
                     type="primary"
                     onClick={() => router.push('/signup')}>
-                    { t('support') }&nbsp;&nbsp;
-                    <ThunderboltOutlined style={{ margin: '0' }} />
+                    { t('support') }
                   </Button>
                 </Menu.Item>
                 <Menu.Item>
                   <Button
-                    size="large"
                     type="text"
-                    onClick={() => router.push('/signup')}>
+                    onClick={() => router.push('/login')}>
                     { t('login') }
                   </Button>
                 </Menu.Item>
