@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/dist/client/router';
 import {
   Typography,
   Row,
@@ -10,30 +11,45 @@ import useLocalization from 'src/lib/localization/useLocalization';
 const { Title } = Typography;
 
 const FeatureSection = (props) => {
+  const router = useRouter();
   const { t } = useLocalization();
 
+  const {
+    grayBg,
+    url,
+    title,
+    content,
+    imgSrc,
+    flipped,
+  } = props;
+
+  const colLg1 = flipped ? { span: 12, push: 12 } : 12;
+  const colLg2 = flipped ? { span: 12, pull: 12 } : 12;
+
   return (
-    <section className={props.grayBg ? 'gray-bg' : ''}>
+    <section className={grayBg ? 'gray-bg' : ''}>
       <div className="container">
         <Row className="mb-0" align="middle" gutter={[30, 60]}>
-          <Col md={24} lg={12}>
-            <div className="mb-4">
+          <Col md={24} lg={colLg1}>
+            <div>
               <Title level={2}>
-                { t('splash_title') }
+                { t(props.title) }
               </Title>
               <p>
-                { t('splash_content') }
+                { t(props.content) }
               </p>
             </div>
-            <Button
-              size="middle"
-              href="/strategy"
-            >
-              { t('learn_more') }
-            </Button>
+            {url && (
+              <Button className="mt-4"
+                size="middle"
+                onClick={() => router.push(url)}
+              >
+                { t('learn_more') }
+              </Button>
+            )}
           </Col>
-          <Col md={24} lg={12}>
-            <img src="/assets/psf-logo.png" height="150" width="123" />
+          <Col md={24} lg={colLg2}>
+            <img src={imgSrc} height="150" width="123" />
           </Col>
         </Row>
       </div>

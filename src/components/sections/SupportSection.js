@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/dist/client/router';
 import {
   Typography,
   Row,
@@ -13,6 +14,7 @@ import useLocalization from 'src/lib/localization/useLocalization';
 const { Title, Text } = Typography;
 
 const SupportSection = () => {
+  const router = useRouter();
   const { t } = useLocalization();
 
   return (
@@ -39,7 +41,11 @@ const SupportSection = () => {
                 </p>
               </Space>
             </div>
-            <Button size="large" href="/signup" type="primary">
+            <Button
+              size="large"
+              type="primary"
+              onClick={() => router.push('/signup')}
+            >
               { t('support_fund') }
             </Button>
           </Col>
