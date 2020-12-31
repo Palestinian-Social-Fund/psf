@@ -5,26 +5,24 @@ import {
   SegmentedSection,
   FeatureSection,
   SupportSection,
-  Footer,
 } from 'src/components/sections';
 import { GeneralLayout } from 'src/components/layouts';
-import withNonAuth from 'src/hocs/withNonAuth';
 import useLocalization from 'src/lib/localization/useLocalization';
 
 const principles = [
   {
-    title: 'value_title_1',
-    content: 'value_content_1',
+    title: 'home_value1_title',
+    content: 'home_value1_content',
     src: '/assets/self-sufficiency.png',
   },
   {
-    title: 'value_title_2',
-    content: 'value_content_2',
+    title: 'home_value2_title',
+    content: 'home_value2_content',
     src: '/assets/cooperativism.png',
   },
   {
-    title: 'value_title_3',
-    content: 'value_content_3',
+    title: 'home_value3_title',
+    content: 'home_value3_content',
     src: '/assets/transparency.png',
   },
 ];
@@ -38,14 +36,24 @@ const Index = () => {
         <title>{ t('static_hd_title') }</title>
       </Head>
       <GeneralLayout>
-        <Banner />
+        <Banner
+          title="home_splash_title"
+          content="home_splash_content"
+          imgSrc="/assets/psf-logo.png"
+        />
         <SegmentedSection children={principles} />
-        <FeatureSection grayBg />
+        <FeatureSection
+          title="home_feature_title"
+          content="home_feature_content"
+          url="/strategy"
+          imgSrc="/assets/psf-logo.png"
+          grayBg
+          flipped
+        />
         <SupportSection />
-        <Footer />
       </GeneralLayout>
     </>
   )
 };
 
-export default withNonAuth(Index);
+export default Index;
