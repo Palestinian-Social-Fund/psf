@@ -15,9 +15,9 @@ const Banner = (props) => {
   const { t } = useLocalization();
 
   return (
-    <section>
+    <section className="padded-section">
       <div className="container">
-        <Row align="middle" gutter={[30, 60]}>
+        <Row align="middle" gutter={30}>
           <Col md={24} lg={14}>
             <div className="mb-4">
               <Title className="banner-title" level={1}>
@@ -36,7 +36,7 @@ const Banner = (props) => {
             </Button>
           </Col>
           <Col md={24} lg={10}>
-            <img src={props.imgSrc} height="150" width="123" />
+            <img className="img-center" src={props.imgSrc} width="60%" />
           </Col>
         </Row>
       </div>

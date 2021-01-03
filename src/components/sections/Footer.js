@@ -17,40 +17,48 @@ const Footer = () => {
   const { t } = useLocalization();
 
   return (
-    <footer>
-      <div className="container mb-0">
-        <Row className="mb-4">
+    <footer className="py-3">
+      <div className="container">
+        <Row className="mb-5">
           <Col md={24} lg={8}>
-            <img src="/assets/psf-logo.png" className="mb-3" height="80" />
-            <p className="text-light">Palestinian Social Fund</p>
+            <p className="text-light mb-0">الصندوق الاجتماعي الفلسطيني</p>
+            <p className="text-light mb-0">Palestinian Social Fund</p>
           </Col>
         </Row>
         <Row className="mb-4">
           <Space size={25}>
             <Link href="/">
-              <a className="text-light">Home</a>
+              <a className="text-light">
+                { t('footer_home') }
+              </a>
             </Link>
             <Link href="/principles">
-              <a className="text-light">Principles</a>
+              <a className="text-light">
+                { t('footer_principles') }
+              </a>
             </Link>
             <Link href="/strategy">
-              <a className="text-light">Strategy</a>
+              <a className="text-light">
+                { t('footer_strategy') }
+              </a>
             </Link>
             <Link href="https://github.com/psfund">
-              <a className="text-light">Github</a>
+              <a className="text-light">
+                Github
+              </a>
             </Link>
           </Space>
         </Row>
         <Row>
           <Space split={<Divider type="vertical" style={{ backgroundColor: 'white' }} />}>
             <Link href="/">
-              <a className="text-light">Terms of Use</a>
+              <a className="text-light">{ t('footer_terms') }</a>
             </Link>
             <Link href="/strategy">
-              <a className="text-light">Privacy Policy</a>
+              <a className="text-light">{ t('footer_privacy') }</a>
             </Link>
             <Text className="text-light">
-              Contact us here any time: <a className="text-light">psfund@protonmail.com</a>
+              { t('footer_contact') } <a className="text-light">psfund@protonmail.com</a>
             </Text>
           </Space>
         </Row>

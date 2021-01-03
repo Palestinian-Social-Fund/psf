@@ -18,15 +18,15 @@ const SupportSection = () => {
   const { t } = useLocalization();
 
   return (
-    <section>
+    <section className="padded-section">
       <div className="container">
-        <Row align="middle" gutter={[30, 60]}>
+        <Row align="middle" gutter={30}>
           <Col md={24} lg={10}>
             <Title level={1}>
-              { t('black_title') }
+              { t('support_title') }
             </Title>
             <p>
-              { t('black_text') }
+              { t('support_content') }
             </p>
             <div className="mt-5 mb-5">
               <Space direction="vertical">
@@ -52,9 +52,11 @@ const SupportSection = () => {
           <Col md={24} lg={7}>
             <Card style={{ width: 205 }}>
               <Title level={5}>
-                { `${t('support')} ${t('monthly')}` }
+                { t('support') }
+                <br />
+                { t('monthly') }
               </Title>
-              <Title className="mt-5 mb-3" level={3}>
+              <Title className="mt-4 mb-1" level={2}>
                 $11
               </Title>
               <Text type="secondary">
@@ -65,9 +67,11 @@ const SupportSection = () => {
           <Col md={24} lg={7}>
             <Card style={{ width: 205 }}>
               <Title level={5}>
-                { `${t('support')} ${t('yearly')}` }
+                { t('support') }
+                <br />
+                { t('yearly') }
               </Title>
-              <Title className="mt-5 mb-3" level={3}>
+              <Title className="mt-4 mb-1" level={2}>
                 $103
               </Title>
               <Text type="secondary">

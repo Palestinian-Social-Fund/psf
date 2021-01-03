@@ -25,9 +25,9 @@ const SegmentedSection = (props) => {
   );
 
   return (
-    <section>
+    <section className="padded-section">
       <div className="container">
-        <Row gutter={[30, 60]}>
+        <Row gutter={30}>
           { children }
         </Row>
         <Button

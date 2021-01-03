@@ -27,9 +27,9 @@ const FeatureSection = (props) => {
   const colLg2 = flipped ? { span: 12, pull: 12 } : 12;
 
   return (
-    <section className={grayBg ? 'gray-bg' : ''}>
+    <section className={`padded-section ${grayBg ? 'gray-bg' : ''}`}>
       <div className="container">
-        <Row className="mb-0" align="middle" gutter={[30, 60]}>
+        <Row className="mb-0" align="middle" gutter={30}>
           <Col md={24} lg={colLg1}>
             <div>
               <Title level={2}>
