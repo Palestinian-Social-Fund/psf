@@ -27,18 +27,20 @@ const Principles = () => {
           title="principles_sufficiency_title"
           content="principles_sufficiency_content"
           imgSrc=""
+          flipped
+          grayBg
         />
         <FeatureSection
           title="principles_cooperativism_title"
           content="principles_cooperativism_content"
           imgSrc=""
-          grayBg
-          flipped
         />
         <FeatureSection
           title="principles_transparency_title"
           content="principles_transparency_content"
           imgSrc=""
+          flipped
+          grayBg
         />
       </GeneralLayout>
     </>
