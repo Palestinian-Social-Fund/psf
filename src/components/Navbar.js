@@ -1,31 +1,34 @@
-import React from 'react'
+import React from 'react';
 import { Layout, Row, Col, Button, Menu, Avatar, Dropdown, Typography } from 'antd';
 import {
   LogoutOutlined,
   UserOutlined,
   BookOutlined,
   CreditCardOutlined,
-} from '@ant-design/icons'
-import Link from 'next/link'
-import { useDispatch, useSelector } from 'react-redux'
-import { useRouter } from 'next/dist/client/router'
-import Dimensions from 'react-dimensions'
-import useLocalization from 'src/lib/localization/useLocalization'
+  ThunderboltOutlined,
+  LoginOutlined,
+  MenuOutlined,
+} from '@ant-design/icons';
+import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/dist/client/router';
+import Dimensions from 'react-dimensions';
+import useLocalization from 'src/lib/localization/useLocalization';
 import LocaleSwitch from 'src/components/LocaleSwitch';
 
 import { handleLogout } from 'src/actions/userActions'
 
-const { Header } = Layout
-const { Title } = Typography
+const { Header } = Layout;
+const { Title } = Typography;
 
 const Navbar = (props) => {
-  const dispatch = useDispatch()
-  const user = useSelector(state => state.user)
+  const dispatch = useDispatch();
+  const user = useSelector(state => state.user);
 
-  const { t, dir } = useLocalization()
-  const router = useRouter()
+  const { t, dir } = useLocalization();
+  const router = useRouter();
 
-  const dropdownOverlay = (
+  const avatarOverlay = (
     <Menu
       onClick={(item) => {
         if (item.key === 'logout') dispatch(handleLogout());
@@ -44,29 +47,42 @@ const Navbar = (props) => {
         <LogoutOutlined /> { t('logout') }
       </Menu.Item>
     </Menu>
-  )
+  );
+
+  const mobileMenuOverlay = (
+    <Menu
+      onClick={(item) => {
+        if (item.key === 'login') router.push('/login');
+        else router.push('/signup');
+      }}>
+      <Menu.Item key="login">
+        <LoginOutlined /> { t('login') }
+      </Menu.Item>
+      <Menu.Item key="signup">
+        <ThunderboltOutlined /> { t('support') }
+      </Menu.Item>
+    </Menu>
+  );
 
   return (
     <Header theme="light">
       <Row wrap={false}>
         <Col flex="0 0 auto">
-          <Title className="mb-0">
-            <Link href="/">
-              <a>
-                <img
-                  className="nav-logo"
-                  src={`/assets/logo-nav-${
-                    props.containerWidth > 575
-                      ? 'lg'
-                      : 'sm'
-                  }.png`} />
-              </a>
-            </Link>
-          </Title>
+          <Link href="/">
+            <a>
+              <img
+                className="nav-logo"
+                src={`/assets/logo-nav-${
+                  props.containerWidth > 575
+                    ? 'lg'
+                    : 'sm'
+                }.png`} />
+            </a>
+          </Link>
         </Col>
         <Col className="menu-row" flex="1 1 auto">
           <Menu mode="horizontal" direction={dir}>
-            {!user.auth && (
+            {!user.auth && props.containerWidth > 575 && (
               <>
                 <Menu.Item>
                   <Button
@@ -84,10 +100,32 @@ const Navbar = (props) => {
                 </Menu.Item>
               </>
             )}
+            {!user.auth && props.containerWidth <= 575 && (
+              <>
+                <Menu.Item>
+                  <Dropdown
+                    overlay={mobileMenuOverlay}
+                    arrow={false}
+                    placement={
+                      dir === 'ltr'
+                        ? 'bottomRight'
+                        : 'bottomLeft'
+                    }
+                  >
+                    <Button
+                      className="mobile-menu-btn"
+                      type="primary"
+                      shape="circle"
+                      icon={<MenuOutlined />}
+                    />
+                  </Dropdown>
+                </Menu.Item>
+              </>
+            )}
             {user.auth && (
               <Menu.Item>
                 <Dropdown
-                  overlay={dropdownOverlay}
+                  overlay={avatarOverlay}
                   arrow={false}
                   placement={
                     dir === 'ltr'
