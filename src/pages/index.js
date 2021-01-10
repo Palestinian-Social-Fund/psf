@@ -33,11 +33,12 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>{ t('static_hd_title') }</title>
+        <title>{ t('home_header_title') }</title>
       </Head>
       <GeneralLayout>
         <Banner
           title="home_splash_title"
+          subtitle="name"
           content="home_splash_content"
           imgSrc="/assets/psf-logo.png"
         />
@@ -48,7 +49,6 @@ const Index = () => {
           url="/strategy"
           imgSrc="/assets/psf-logo.png"
           grayBg
-          flipped
         />
         <SupportSection />
       </GeneralLayout>

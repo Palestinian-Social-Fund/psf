@@ -18,11 +18,12 @@ const Strategy = () => {
   return (
     <>
       <Head>
-        <title>{ t('static_hd_title') }</title>
+        <title>{ t('strategy_header_title') }</title>
       </Head>
       <GeneralLayout>
         <Banner
           title="strategy_splash_title"
+          subtitle="strategy_splash_subtitle"
           content="strategy_splash_content"
           imgSrc="/assets/psf-logo.png"
         />

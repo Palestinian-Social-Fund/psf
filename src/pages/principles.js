@@ -15,11 +15,12 @@ const Principles = () => {
   return (
     <>
       <Head>
-        <title>{ t('static_hd_title') }</title>
+        <title>{ t('principles_header_title') }</title>
       </Head>
       <GeneralLayout>
         <Banner
           title="principles_splash_title"
+          subtitle="principles_splash_subtitle"
           content="principles_splash_content"
           imgSrc="/assets/psf-logo.png"
         />
