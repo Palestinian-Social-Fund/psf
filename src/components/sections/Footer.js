@@ -8,6 +8,7 @@ import {
   Card,
   Divider,
 } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import useLocalization from 'src/lib/localization/useLocalization';
 
@@ -44,7 +45,7 @@ const Footer = () => {
             </Link>
             <Link href="https://github.com/psfund">
               <a className="text-light">
-                Github
+                { t('footer_github') } <GithubOutlined />
               </a>
             </Link>
           </Space>

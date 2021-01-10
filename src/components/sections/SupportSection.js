@@ -49,7 +49,7 @@ const SupportSection = () => {
               { t('support_fund') }
             </Button>
           </Col>
-          <Col md={24} lg={7}>
+          <Col className="support-section-col" md={24} lg={7}>
             <Card style={{ width: 205 }}>
               <Title level={5}>
                 { t('support') }
@@ -64,7 +64,7 @@ const SupportSection = () => {
               </Text>
             </Card>
           </Col>
-          <Col md={24} lg={7}>
+          <Col className="support-section-col" md={24} lg={7}>
             <Card style={{ width: 205 }}>
               <Title level={5}>
                 { t('support') }

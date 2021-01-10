@@ -9,6 +9,7 @@ const strings = {
     profile_hd_title: 'Profile - PSF',
 
     // Home page
+    home_header_title: 'Home - Palestinian Social Fund',
     home_splash_title: 'Support the framework for Palestinian economic independence',
     home_splash_content: 'The future might seem bleak, but we believe differently. The PSF is dedicated to revitalizing the Palestinian economy one village at a time. With economic independence, we achieve political sovereignty.',
     home_value1_title: 'Self-sufficiency',
@@ -18,24 +19,28 @@ const strings = {
     home_value3_title: 'Transparency',
     home_value3_content: 'Open-sourcing the PSF\'s intellectual property and investment activity to lead honest development of our collective goal.',
     home_feature_title: 'Crowdsourced capital invested in the agricultural sector',
-    home_feature_content: 'Agriculture is the base of any economy, but today the Palestinian agri-sector has diminished to 6% of our GDP. As a result, the PSF is investing 100% of its fund into unionizing and growing agricultural coops. Owning our economy begins by owning our sustenance.',
+    home_feature_content: 'Agriculture is the base of any economy, but today Palestine is dependent on importing the majority of its food. As a result, the PSF is investing 100% of its fund into unionizing and growing agricultural cooperatives. Owning our economy begins by owning our sustenance.',
     support_title: 'Start today',
     support_content: 'Help revitalize the Palestinian economy.',
     support_fund: 'Support Fund',
     learn_more: 'Learn More',
 
     // Strategy page
-    strategy_splash_title: 'Pioneering strategic & educated capital deployment',
-    strategy_splash_content: 'Humanitarian capital is usually deployed in a scattered manner to diversify philanthropic efforts. We believe the opposite—the PSF localizes its investments to revive the agricultural sector one village at a time. When we own our sustenance, each village becomes an economic island that cooperates with the other villages.',
-    strategy_step1_title: '1. Subsidizing coops in agriculture',
-    strategy_step1_content: 'Any coop, whether new or existing, can be subsidized an amount relative to its sector by joining our coop network, adopting our charter of values, and accepting our communal revenue sharing model.',
-    strategy_step2_title: '2. Actively helping grow coops on the ground',
-    strategy_step2_content: 'We take a hands-on approach to improve every coop\'s operational logistics in order to become the dominant provider for its locale.',
-    strategy_step3_title: '3. Replicating successful coops in other villages',
-    strategy_step3_content: 'After a coop\'s operation is deemed sustainable, we directly replicate it in other villages. This saves us time and allows us to scale at lightning speed.',
+    strategy_header_title: 'Strategy - Palestinian Social Fund',
+    strategy_splash_title: 'Pioneering localized capital deployment',
+    strategy_splash_subtitle: 'Strategy of the fund',
+    strategy_splash_content: 'Humanitarian capital is usually deployed in a scattered manner to diversify philanthropic efforts. We believe the opposite—the PSF localizes its investments to revive the agricultural sector one village at a time. When we own our sustenance, each village becomes an economic island owning its production capacity.',
+    strategy_step1_title: '1. Subsidizing cooperatives in agriculture',
+    strategy_step1_content: 'Any cooperative, whether new or existing, can be subsidized an amount relative to its sector by joining our cooperative network, adopting our charter of values, and accepting our communal revenue sharing model.',
+    strategy_step2_title: '2. Actively helping grow cooperatives on the ground',
+    strategy_step2_content: 'We take a hands-on approach to improve every cooperative\'s operational logistics in order to become the dominant provider for its locale.',
+    strategy_step3_title: '3. Replicating successful cooperatives in other villages',
+    strategy_step3_content: 'After a cooperatives\'s operation is deemed sustainable, we directly replicate it in other villages. This saves us time and allows us to scale at lightning speed.',
 
     // Principles page
+    principles_header_title: 'Principles - Palestinian Social Fund',
     principles_splash_title: 'Laying the foundation for the Palestinian economy',
+    principles_splash_subtitle: 'Principles of the fund',
     principles_splash_content: 'Our economy is currently dependent on foreign aid and exports, a great indicator for a brittle economic foundation on the brink of collapse. The PSF is building a foundational base upon unshakeable pillars that guarantees sustainable growth. Palestine can be an oasis against all odds.',
     principles_sufficiency_title: 'Self-sufficiency: localizing production in our rural makeup',
     principles_sufficiency_content: 'For each Palestinian village to have the ability to produce its essential needs and avoid the centralization of control over production.',
@@ -51,6 +56,7 @@ const strings = {
     footer_contact: 'Contact us any time:',
     footer_privacy: 'Privacy Policy',
     footer_terms: 'Terms of Service',
+    footer_github: 'Github',
 
     // Dashboard page titles
     profile_pg_title: 'Profile',
@@ -141,6 +147,7 @@ const strings = {
     current_password_error: 'The current password you entered is invalid.',
 
     // Miscellaneaous
+    name: 'Palestinian Social Fund',
     dashboard: 'Dashboard',
     email: 'Email',
     password: 'Password',
@@ -192,7 +199,8 @@ const strings = {
     learn_more: 'مزيد المعلومات',
 
     // Strategy page
-    strategy_splash_title: 'ريادة نشر رأس المال المتعلم والاستراتيجي',
+    strategy_splash_title: 'ريادة الاستثمار المركز',
+    strategy_splash_subtitle: 'استراتيجية الصندوق',
     strategy_splash_content: 'عادةً ما يتم استخدام رأس المال الإنساني بطريقة متفرقة لتنويع الجهود الخيرية. نعتقد أن العكس هو الصحيح - تقوم PSF بتوطين استثماراتها لإحياء القطاع الزراعي قرية واحدة في كل مرة. عندما نملك قوتنا ، تصبح كل قرية جزيرة اقتصادية تتعاون مع القرى الأخرى.',
     strategy_step1_title: '1. دعم التعاونيات في الزراعة',
     strategy_step1_content: 'أي تعاون ، سواء كان جديدًا أو قائمًا ، يمكن دعمه بمبلغ يتناسب مع قطاعه من خلال الانضمام إلى شبكتنا التعاونية ، واعتماد ميثاق القيم لدينا ، وقبول نموذج تقاسم الإيرادات المجتمعية.',
@@ -203,6 +211,7 @@ const strings = {
 
     // Principles page
     principles_splash_title: 'إرساء أسس الاقتصاد الفلسطيني',
+    principles_splash_subtitle: 'مبادئ الصندوق',
     principles_splash_content: 'يعتمد اقتصادنا حاليًا على المساعدات الخارجية والصادرات ، وهو مؤشر كبير على وجود أساس اقتصادي هش على شفا الانهيار. يقوم PSF ببناء قاعدة تأسيسية على ركائز لا تتزعزع تضمن النمو المستدام. يمكن أن تكون فلسطين واحة رغم كل الصعاب.',
     principles_sufficiency_title: 'الاكتفاء الذاتي: توطين الإنتاج في مكياجنا الريفي',
     principles_sufficiency_content: 'لكل قرية فلسطينية القدرة على إنتاج احتياجاتها الأساسية وتجنب مركزة السيطرة على الإنتاج.',
@@ -218,6 +227,7 @@ const strings = {
     footer_contact: 'للاتصال بنا في أي وقت:',
     footer_privacy: 'سياسة الخصوصية',
     footer_terms: 'شروط الخدمة',
+    footer_github: 'جيتهب',
 
     // Dashboard page titles
     profile_pg_title: 'الملف الشخصي',
@@ -306,6 +316,7 @@ const strings = {
     current_password_error: 'كلمة السر الحالية التي تم إدخالها غير صالحة.',
 
     // Miscellaneaous
+    name: 'الصندوق الاجتماعي الفلسطيني',
     dashboard: 'الحساب',
     email: 'البريد الإلكتروني',
     password: 'كلمة السر',
@@ -328,8 +339,8 @@ const strings = {
     view_dashboard: 'عرض الملف',
     no_data: 'لايوجد بيانات',
     yes: 'نعم',
-    no: 'لا'
-  }
-}
+    no: 'لا',
+  },
+};
 
-export default strings
+export default strings;

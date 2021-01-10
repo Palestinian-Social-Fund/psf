@@ -23,13 +23,16 @@ const FeatureSection = (props) => {
     flipped,
   } = props;
 
-  const colLg1 = flipped ? { span: 12, push: 12 } : 12;
-  const colLg2 = flipped ? { span: 12, pull: 12 } : 12;
+  const colLg1 = flipped ? { span: 12, pull: 12 } : 12;
+  const colLg2 = flipped ? { span: 12, push: 12 } : 12;
 
   return (
     <section className={`padded-section ${grayBg ? 'gray-bg' : ''}`}>
       <div className="container">
         <Row className="mb-0" align="middle" gutter={30}>
+          <Col md={24} lg={colLg2}>
+            <img className="center" src={imgSrc} height="150" width="123" />
+          </Col>
           <Col md={24} lg={colLg1}>
             <div>
               <Title level={2}>
@@ -47,9 +50,6 @@ const FeatureSection = (props) => {
                 { t('learn_more') }
               </Button>
             )}
-          </Col>
-          <Col md={24} lg={colLg2}>
-            <img src={imgSrc} height="150" width="123" />
           </Col>
         </Row>
       </div>

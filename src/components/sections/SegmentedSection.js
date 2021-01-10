@@ -15,8 +15,8 @@ const SegmentedSection = (props) => {
   const { t } = useLocalization();
 
   const children = props.children.map((child, i) =>
-    <Col key={i} md={24} lg={8}>
-      <img key="image" className="image mb-5" src={child.src} />
+    <Col key={i} className="segmented-section-col" md={24} lg={8}>
+      <img key="image" className="mb-4" src={child.src} />
       <Title level={2}>
         { t(child.title) }
       </Title>
@@ -30,12 +30,16 @@ const SegmentedSection = (props) => {
         <Row gutter={30}>
           { children }
         </Row>
-        <Button
-          size="middle"
-          onClick={() => router.push('/principles')}
-        >
-          { t('learn_more') }
-        </Button>
+        <Row gutter={30}>
+          <Col className="segmented-section-col" md={24}>
+            <Button
+              size="middle"
+              onClick={() => router.push('/principles')}
+            >
+              { t('learn_more') }
+            </Button>
+          </Col>
+        </Row>
       </div>
     </section>
   );

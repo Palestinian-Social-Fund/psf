@@ -8,18 +8,26 @@ import {
 } from 'antd';
 import useLocalization from 'src/lib/localization/useLocalization';
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const Banner = (props) => {
   const router = useRouter();
   const { t } = useLocalization();
 
   return (
-    <section className="padded-section">
+    <section className="banner-section padded-section">
       <div className="container">
         <Row align="middle" gutter={30}>
-          <Col md={24} lg={14}>
-            <div className="mb-4">
+          <Col md={24}>
+            <img className="center mb-4" src={props.imgSrc} width="13%" />
+          </Col>
+          <Col md={24}>
+            <div className="text-center mb-4">
+              <p className="text-center mb-2">
+                <Text type="secondary">
+                  { t(props.subtitle) }
+                </Text>
+              </p>
               <Title className="banner-title" level={1}>
                 { t(props.title) }
               </Title>
@@ -28,15 +36,13 @@ const Banner = (props) => {
               </p>
             </div>
             <Button
+              className="center"
               size="large"
               type="primary"
               onClick={() => router.push('/signup')}
             >
               { t('support_fund') }
             </Button>
-          </Col>
-          <Col md={24} lg={10}>
-            <img className="img-center" src={props.imgSrc} width="60%" />
           </Col>
         </Row>
       </div>
