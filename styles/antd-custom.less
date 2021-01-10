@@ -18,12 +18,12 @@
 @typography-title-font-weight: 700;
 
 @select-item-selected-bg: #f0f0f0;
-@font-size-base: 18px;
-@line-height-base: 1.75;
+@font-size-base: 20px;
+@line-height-base: 1.70;
 
-@height-base: 40px;
+@height-base: 45px;
 @height-lg: 55px;
-@height-sm: 30px;
+@height-sm: 35px;
 
 *,
 *:before,
@@ -48,7 +48,7 @@ footer {
 }
 
 p {
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .menu-row {
@@ -66,6 +66,15 @@ p {
   }
   .ant-menu[direction="rtl"] > * {
     float: left;
+  }
+
+  .mobile-menu-btn {
+    .anticon {
+      margin-right: 0px;
+    }
+    .ant-menu-item {
+      margin: 0px 5px !important;
+    }
   }
 }
 
@@ -112,15 +121,19 @@ p {
   color: rgba(0,0,0,0.45) !important;
 }
 
-.img-center {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .padded-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.banner-section {
+  border-bottom: thin solid @layout-body-background;
 }
 
 .loader {
@@ -317,7 +330,7 @@ p {
 }
 
 @media (max-width: 980px) {
-  .ant-layout.container {
+  .container {
     width: 100%;
   }
 
@@ -336,7 +349,30 @@ p {
 
 @media (max-width: 575px) {
   header.ant-layout-header {
-    padding: 0px 30px;
+    padding: 0px 15px;
+  }
+
+  h1.ant-typography {
+    font-size: @font-size-base * 1.8;
+  }
+
+  h2.ant-typography {
+    font-size: @font-size-base * 1.6;
+  }
+
+  p {
+    font-size: @font-size-base * 0.9;
+  }
+
+  .padded-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .segmented-section-col {
+    margin-top: 60px;
+  }
+  .support-section-col {
+    margin-top: 60px;
   }
   .ant-col-rtl {
     text-align: right !important;
