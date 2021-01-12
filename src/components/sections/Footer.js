@@ -23,9 +23,10 @@ const Footer = (props) => {
     <footer className="py-3">
       <div className="container">
         <Row className="mb-4">
-          <Col md={24} lg={8}>
+          <Col md={24}>
             <p className="text-light mb-0">الصندوق الاجتماعي الفلسطيني</p>
             <p className="text-light mb-0">Palestinian Social Fund</p>
+            <Divider style={{ backgroundColor: 'grey' }} />
           </Col>
         </Row>
         {props.containerWidth <= 575 && (
