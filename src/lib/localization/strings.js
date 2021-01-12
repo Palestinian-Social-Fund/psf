@@ -41,7 +41,7 @@ const strings = {
     principles_header_title: 'Principles - Palestinian Social Fund',
     principles_splash_title: 'Laying the foundation for the Palestinian economy',
     principles_splash_subtitle: 'Principles of the fund',
-    principles_splash_content: 'Our economy is currently dependent on foreign aid and exports, a great indicator for a brittle economic foundation on the brink of collapse. The PSF is building a foundational base upon unshakeable pillars that guarantees sustainable growth. Palestine can be an oasis against all odds.',
+    principles_splash_content: 'Our economy is currently dependent on foreign aid and imports, a great indicator for a brittle economic foundation on the brink of collapse. The PSF is building a foundational base upon unshakeable pillars that guarantees sustainable growth. Palestine can be an oasis against all odds.',
     principles_sufficiency_title: 'Self-sufficiency: localizing production in our rural makeup',
     principles_sufficiency_content: 'For each Palestinian village to have the ability to produce its essential needs and avoid the centralization of control over production.',
     principles_cooperativism_title: 'Cooperativism: achieving true democracy with the one-share-one-vote model',
@@ -183,6 +183,7 @@ const strings = {
     profile_hd_title: 'الملف الشخصي - الصندوق الاجتماعي الفلسطيني',
 
     // Home page
+    home_header_title: 'الصفحة الرأيسية - الصندوق الاجتماعي الفلسطيني',
     home_splash_title: 'دعم إطار الاستقلال الاقتصادي الفلسطيني',
     home_splash_content: 'قد يبدو المستقبل قاتمًا ، لكننا نعتقد بشكل مختلف. يكرس PSF جهوده لتنشيط الاقتصاد الفلسطيني قرية تلو الأخرى. بالاستقلال الاقتصادي نحقق السيادة السياسية.',
     home_value1_title: 'الاكتفاء الذاتي',
@@ -199,6 +200,7 @@ const strings = {
     learn_more: 'مزيد المعلومات',
 
     // Strategy page
+    strategy_header_title: 'الاستراتيجية - الصندوق الاجتماعي الفلسطيني',
     strategy_splash_title: 'ريادة الاستثمار المركز',
     strategy_splash_subtitle: 'استراتيجية الصندوق',
     strategy_splash_content: 'عادةً ما يتم استخدام رأس المال الإنساني بطريقة متفرقة لتنويع الجهود الخيرية. نعتقد أن العكس هو الصحيح - تقوم PSF بتوطين استثماراتها لإحياء القطاع الزراعي قرية واحدة في كل مرة. عندما نملك قوتنا ، تصبح كل قرية جزيرة اقتصادية تتعاون مع القرى الأخرى.',
@@ -210,6 +212,7 @@ const strings = {
     strategy_step3_content: 'بعد اعتبار عملية التعاون مستدامة ، نقوم بتكرارها مباشرة في قرى أخرى. هذا يوفر لنا الوقت ويسمح لنا بالتوسع بسرعة البرق.',
 
     // Principles page
+    principles_header_title: 'المبادئ - الصندوق الاجتماعي الفلسطيني',
     principles_splash_title: 'إرساء أسس الاقتصاد الفلسطيني',
     principles_splash_subtitle: 'مبادئ الصندوق',
     principles_splash_content: 'يعتمد اقتصادنا حاليًا على المساعدات الخارجية والصادرات ، وهو مؤشر كبير على وجود أساس اقتصادي هش على شفا الانهيار. يقوم PSF ببناء قاعدة تأسيسية على ركائز لا تتزعزع تضمن النمو المستدام. يمكن أن تكون فلسطين واحة رغم كل الصعاب.',

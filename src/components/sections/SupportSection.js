@@ -21,7 +21,7 @@ const SupportSection = () => {
     <section className="padded-section">
       <div className="container">
         <Row align="middle" gutter={30}>
-          <Col md={24} lg={10}>
+          <Col xs={24} md={24} lg={10}>
             <Title level={1}>
               { t('support_title') }
             </Title>
@@ -49,14 +49,9 @@ const SupportSection = () => {
               { t('support_fund') }
             </Button>
           </Col>
-          <Col className="support-section-col" md={24} lg={7}>
-            <Card style={{ width: 205 }}>
-              <Title level={5}>
-                { t('support') }
-                <br />
-                { t('monthly') }
-              </Title>
-              <Title className="mt-4 mb-1" level={2}>
+          <Col className="support-section-col" xs={24} md={24} lg={7}>
+            <Card title={`${ t('support') } ${ t('monthly') }`} style={{ width: '100%' }}>
+              <Title className="mb-0" level={2}>
                 $11
               </Title>
               <Text type="secondary">
@@ -64,14 +59,9 @@ const SupportSection = () => {
               </Text>
             </Card>
           </Col>
-          <Col className="support-section-col" md={24} lg={7}>
-            <Card style={{ width: 205 }}>
-              <Title level={5}>
-                { t('support') }
-                <br />
-                { t('yearly') }
-              </Title>
-              <Title className="mt-4 mb-1" level={2}>
+          <Col className="support-section-col" xs={24} md={24} lg={7}>
+            <Card title={`${ t('support') } ${ t('yearly') }`} style={{ width: '100%' }}>
+              <Title className="mb-0" level={2}>
                 $103
               </Title>
               <Text type="secondary">
