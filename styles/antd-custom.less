@@ -133,7 +133,7 @@ p {
 }
 
 .banner-section {
-  border-bottom: thin solid @layout-body-background;
+  border-bottom: thin solid #f0f0f0;
 }
 
 .loader {
@@ -308,48 +308,15 @@ p {
   border-radius: 2px;
 }
 
-/* Home page */
-
-.flex-section {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  min-height: calc(100vh - 64px);
-}
-
-.flex-section.green {
-  background-image: radial-gradient(38% 92%, #2AA636 35%, #127B1C 95%);
-}
-
-.flex-section.red {
-  background-image: radial-gradient(38% 92%, #E62929 35%, #CF0101 95%);
-}
-
-.flex-section.black {
-  background-image: radial-gradient(38% 92%, #2B2B2B 35%, #000000 95%);
-}
-
 @media (max-width: 980px) {
   .container {
     width: 100%;
-  }
-
-  .flex-section.green {
-    background-image: radial-gradient(92% 38%, #2AA636 35%, #127B1C 95%);
-  }
-
-  .flex-section.red {
-    background-image: radial-gradient(92% 38%, #E62929 35%, #CF0101 95%);
-  }
-
-  .flex-section.black {
-    background-image: radial-gradient(92% 38%, #2B2B2B 35%, #000000 95%);
   }
 }
 
 @media (max-width: 575px) {
   header.ant-layout-header {
-    padding: 0px 15px;
+    padding: 0px 0px 0px 20px;
   }
 
   h1.ant-typography {
