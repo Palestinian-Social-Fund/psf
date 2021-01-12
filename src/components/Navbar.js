@@ -7,7 +7,6 @@ import {
   CreditCardOutlined,
   ThunderboltOutlined,
   LoginOutlined,
-  MenuOutlined,
 } from '@ant-design/icons';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
@@ -82,7 +81,7 @@ const Navbar = (props) => {
         </Col>
         <Col className="menu-row" flex="1 1 auto">
           <Menu mode="horizontal" direction={dir}>
-            {!user.auth && props.containerWidth > 575 && (
+            {!user.auth && (
               <>
                 <Menu.Item>
                   <Button
@@ -97,28 +96,6 @@ const Navbar = (props) => {
                     onClick={() => router.push('/login')}>
                     { t('login') }
                   </Button>
-                </Menu.Item>
-              </>
-            )}
-            {!user.auth && props.containerWidth <= 575 && (
-              <>
-                <Menu.Item>
-                  <Dropdown
-                    overlay={mobileMenuOverlay}
-                    arrow={false}
-                    placement={
-                      dir === 'ltr'
-                        ? 'bottomRight'
-                        : 'bottomLeft'
-                    }
-                  >
-                    <Button
-                      className="mobile-menu-btn"
-                      type="primary"
-                      shape="circle"
-                      icon={<MenuOutlined />}
-                    />
-                  </Dropdown>
                 </Menu.Item>
               </>
             )}
@@ -139,9 +116,11 @@ const Navbar = (props) => {
                 </Dropdown>
               </Menu.Item>
             )}
-            <Menu.Item>
-              <LocaleSwitch />
-            </Menu.Item>
+            {props.containerWidth > 575 && (
+              <Menu.Item>
+                <LocaleSwitch />
+              </Menu.Item>
+            )}
           </Menu>
         </Col>
       </Row>
