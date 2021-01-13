@@ -23,7 +23,8 @@ const strings = {
     support_title: 'Start today',
     support_content: 'Help revitalize the Palestinian economy.',
     support_fund: 'Support Fund',
-    learn_more: 'Learn More',
+    strategy_more: 'More on Strategy',
+    principles_more: 'More on Principles',
 
     // Strategy page
     strategy_header_title: 'Strategy - Palestinian Social Fund',
@@ -197,7 +198,8 @@ const strings = {
     support_title: 'الإبتداء اليوم',
     support_content: 'لمساعدت إنشاء الاقتصاد الفلسطيني.',
     support_fund: 'دعم الصندوق',
-    learn_more: 'مزيد المعلومات',
+    strategy_more: 'المزيد عن الاستراتيجية',
+    principles_more: 'المزيد عن الأسس',
 
     // Strategy page
     strategy_header_title: 'الاستراتيجية - الصندوق الاجتماعي الفلسطيني',

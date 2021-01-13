@@ -15,6 +15,7 @@ const FeatureSection = (props) => {
   const { t } = useLocalization();
 
   const {
+    btnTitle,
     grayBg,
     url,
     title,
@@ -47,7 +48,7 @@ const FeatureSection = (props) => {
                 size="middle"
                 onClick={() => router.push(url)}
               >
-                { t('learn_more') }
+                { t(btnTitle) }
               </Button>
             )}
           </Col>

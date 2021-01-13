@@ -42,10 +42,14 @@ const Index = () => {
           content="home_splash_content"
           imgSrc="/assets/psf-logo.png"
         />
-        <SegmentedSection children={principles} />
+        <SegmentedSection
+          children={principles}
+          btnTitle="principles_more"
+        />
         <FeatureSection
           title="home_feature_title"
           content="home_feature_content"
+          btnTitle="strategy_more"
           url="/strategy"
           imgSrc="/assets/psf-logo.png"
           grayBg

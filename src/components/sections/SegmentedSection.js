@@ -36,7 +36,7 @@ const SegmentedSection = (props) => {
               size="middle"
               onClick={() => router.push('/principles')}
             >
-              { t('learn_more') }
+              { t(props.btnTitle) }
             </Button>
           </Col>
         </Row>
