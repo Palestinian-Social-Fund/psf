@@ -8,6 +8,7 @@ import { localeNames } from 'src/lib/localization/config';
 const LocaleSwitch = () => {
   const router = useRouter();
   const { locale, locales } = router;
+  const oppositeLocale = locale === 'ar' ? 'en' : 'ar';
 
   const handleClick = React.useCallback(
     (newLocale) => {
@@ -19,9 +20,9 @@ const LocaleSwitch = () => {
   return (
     <Button
       size="small"
-      onClick={() => handleClick(locale === 'ar' ? 'en' : 'ar')}
+      onClick={() => handleClick(oppositeLocale)}
     >
-      { localeNames[locale] }
+      { localeNames[oppositeLocale] }
     </Button>
   )
 };
