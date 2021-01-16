@@ -25,7 +25,7 @@ const Strategy = () => {
           title="strategy_splash_title"
           subtitle="strategy_splash_subtitle"
           content="strategy_splash_content"
-          imgSrc="/assets/psf-logo.png"
+          imgSrc="/assets/strategy-logo.png"
         />
         <FeatureSection
           title="strategy_step1_title"

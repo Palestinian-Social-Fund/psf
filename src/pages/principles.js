@@ -22,7 +22,7 @@ const Principles = () => {
           title="principles_splash_title"
           subtitle="principles_splash_subtitle"
           content="principles_splash_content"
-          imgSrc="/assets/psf-logo.png"
+          imgSrc="/assets/principles-logo.png"
         />
         <FeatureSection
           title="principles_sufficiency_title"

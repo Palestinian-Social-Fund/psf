@@ -18,8 +18,8 @@ const Banner = (props) => {
     <section className="banner-section padded-section">
       <div className="container">
         <Row align="middle" gutter={30}>
-          <Col md={24}>
-            <img className="center mb-4" src={props.imgSrc} width="13%" />
+          <Col xs={24} md={24}>
+            <img className="center mb-4" src={props.imgSrc} width="175px" />
           </Col>
           <Col md={24}>
             <div className="text-center mb-4">
