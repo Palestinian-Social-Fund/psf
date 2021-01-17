@@ -24,7 +24,7 @@ const Footer = (props) => {
       <div className="container">
         <Row className="mb-4">
           <Col md={24}>
-            <p className="text-light mb-0">الصندوق الاجتماعي الفلسطيني</p>
+            <img src="/assets/logo-footer.png" />
             <p className="text-light mb-0">Palestinian Social Fund</p>
             <Divider style={{ backgroundColor: 'grey' }} />
           </Col>
@@ -67,16 +67,6 @@ const Footer = (props) => {
           </Col>
         </Row>
         <Row gutter={30}>
-          <Col xs={24} sm={24} md={4}>
-            <Link href="/">
-              <a className="text-light">{ t('footer_terms') }</a>
-            </Link>
-          </Col>
-          <Col xs={24} sm={24} md={4}>
-            <Link href="/strategy">
-              <a className="text-light">{ t('footer_privacy') }</a>
-            </Link>
-          </Col>
           <Col xs={24} sm={24} md={16}>
             <Text className="text-light">
               { t('footer_contact') } <a className="text-light">psfund@protonmail.com</a>

@@ -32,7 +32,7 @@ const FeatureSection = (props) => {
       <div className="container">
         <Row className="mb-0" align="middle" gutter={30}>
           <Col md={24} lg={colLg2}>
-            <img className="center" src={imgSrc} height="150" width="123" />
+            <img className="hovering-img center mb-4" src={imgSrc} width="100%" />
           </Col>
           <Col md={24} lg={colLg1}>
             <div>

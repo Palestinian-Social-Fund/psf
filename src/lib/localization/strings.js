@@ -32,7 +32,7 @@ const strings = {
     strategy_splash_subtitle: 'Strategy of the fund',
     strategy_splash_content: 'Humanitarian capital is usually deployed in a scattered manner to diversify philanthropic efforts. We believe the opposite—the PSF localizes its investments to revive the agricultural sector one village at a time. When we own our sustenance, each village becomes an economic island with its own production capacity.',
     strategy_step1_title: '1. Subsidizing agricultural cooperatives',
-    strategy_step1_content: 'Funding is granted in an amount that matches the need of the cooperative and the fund\'s goals for any new or existing cooperatives.',
+    strategy_step1_content: 'Funding is granted to any new or existing cooperatives in an amount that matches its needs as well as the fund\'s goals.',
     strategy_step2_title: '2. Actively helping grow cooperatives on the ground',
     strategy_step2_content: 'We take a hands-on approach to improve every cooperative\'s operational logistics in order to become the dominant provider for its locale.',
     strategy_step3_title: '3. Replicating successful cooperatives in other villages',
