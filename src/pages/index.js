@@ -51,7 +51,7 @@ const Index = () => {
           content="home_feature_content"
           btnTitle="strategy_more"
           url="/strategy"
-          imgSrc="/assets/psf-logo.png"
+          imgSrc="/assets/home-feature.png"
           grayBg
         />
         <SupportSection />

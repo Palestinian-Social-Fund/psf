@@ -30,19 +30,19 @@ const Strategy = () => {
         <FeatureSection
           title="strategy_step1_title"
           content="strategy_step1_content"
-          imgSrc=""
+          imgSrc="/assets/strategy-1.png"
           flipped
           grayBg
         />
         <FeatureSection
           title="strategy_step2_title"
           content="strategy_step2_content"
-          imgSrc=""
+          imgSrc="/assets/strategy-2.png"
         />
         <FeatureSection
           title="strategy_step3_title"
           content="strategy_step3_content"
-          imgSrc=""
+          imgSrc="/assets/strategy-3.png"
           flipped
           grayBg
         />

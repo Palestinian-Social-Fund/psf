@@ -27,19 +27,19 @@ const Principles = () => {
         <FeatureSection
           title="principles_sufficiency_title"
           content="principles_sufficiency_content"
-          imgSrc=""
+          imgSrc="/assets/principles-1.png"
           flipped
           grayBg
         />
         <FeatureSection
           title="principles_cooperativism_title"
           content="principles_cooperativism_content"
-          imgSrc=""
+          imgSrc="/assets/principles-2.png"
         />
         <FeatureSection
           title="principles_transparency_title"
           content="principles_transparency_content"
-          imgSrc=""
+          imgSrc="/assets/principles-3.png"
           flipped
           grayBg
         />
