@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { Typography } from 'antd';
 import {
@@ -15,6 +15,10 @@ const { Title } = Typography;
 const Strategy = () => {
   const { t } = useLocalization();
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Head>

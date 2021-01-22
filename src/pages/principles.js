@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import {
   Banner,
@@ -12,6 +12,10 @@ import useLocalization from 'src/lib/localization/useLocalization';
 const Principles = () => {
   const { t } = useLocalization();
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Head>
