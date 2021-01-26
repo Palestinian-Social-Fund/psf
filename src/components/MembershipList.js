@@ -61,10 +61,10 @@ const MembershipList = (props) => {
       </Card.Grid>
       <Card.Grid style={gridStyle}>
         <Skeleton loading={data.loading} active>
-          <Title level={5} strong>
+          <Title level={5}>
             { `${t('support')} ${t('monthly')}` }
           </Title>
-          <Title className="mt-5 mb-3" level={3}>
+          <Title className="mt-4 mb-0" level={3}>
             ${
               data.mems.length
                 ? data.mems[0].unit_amount / 100
@@ -88,10 +88,10 @@ const MembershipList = (props) => {
       </Card.Grid>
       <Card.Grid style={gridStyle}>
         <Skeleton loading={data.loading} active>
-          <Title level={5} strong>
+          <Title level={5}>
             { `${t('support')} ${t('yearly')}` }
           </Title>
-          <Title className="mt-5 mb-3" level={3}>
+          <Title className="mt-4 mb-0" level={3}>
             ${
               data.mems.length
                 ? (data.mems[1].unit_amount / 100)

@@ -28,7 +28,7 @@ const MembershipSettings = (props) => {
       </Card.Grid>
       <Card.Grid hoverable={false} style={{ width: '100%' }}>
         <Row justify="space-between" align="middle">
-          <Col span={18}>
+          <Col xs={24} sm={18}>
             <Skeleton
               loading={data.loading && !data.sub}
               paragraph={{ rows: 1 }}
@@ -51,7 +51,7 @@ const MembershipSettings = (props) => {
               </Text> 
             </Skeleton>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={6}>
             {
               !data.sub
                 ? <Skeleton.Button
@@ -64,11 +64,16 @@ const MembershipSettings = (props) => {
                     type="primary"
                     size="large"
                     style={{
-                      float: direction === 'ltr'
+                      backgroundColor: subIsActive
+                        ? '#ff4d4f'
+                        : '#52c41a',
+                      borderColor: subIsActive
+                        ? '#ff4d4f'
+                        : '#52c41a',
+                      float: dir === 'ltr'
                         ? 'right'
                         : 'left'
                     }}
-                    danger={subIsActive}
                     onClick={() => {
                       onEdit({
                         subId: data.sub.id,

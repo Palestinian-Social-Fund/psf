@@ -280,8 +280,8 @@ const strings = {
     cancel_or_edit: 'للإلغاء أو التعديل في أي وقت',
     view_activity: 'للاطلاع على نشاط الصندوق',
     receive_updates: 'لتلقي تحديثات الصندوق',
-    per_month: 'شهريا',
-    per_year: 'سنويا',
+    per_month: 'شهرياً',
+    per_year: 'سنوياً',
     currency_disclaimer: 'التسعير بالدولار الأمريكي.',
 
     // MembershipSettings

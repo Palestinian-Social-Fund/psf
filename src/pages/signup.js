@@ -161,42 +161,44 @@ const Signup = () => {
         <title>{t('signup_hd_title')}</title>
       </Head>
       <GeneralLayout>
-        <Layout className="container">
-          <Row type="flex" justify="center">
-            <Col xs={24} sm={16}>
-              <Steps current={step}>
-                <Step title={t('signup')} icon={<LoginOutlined />} />
-                <Step title={t('membership')} icon={<BookOutlined />} />
-                <Step title={t('payment')} icon={<CreditCardOutlined />} />
-              </Steps>
-              <br />
-              {
-                pmForm.success
-                  ? renderWelcome()
-                  : renderStep(step)
-              }
-              {
-                step !== 2 || pmForm.success
-                  ? null
-                  : (
-                    <Button
-                      icon={
-                        direction === 'ltr'
-                          ? <ArrowLeftOutlined />
-                          : <ArrowRightOutlined />
-                      }
-                      onClick={() => {
-                        setStep(step - 1)
-                        dispatch(memListOnSelect(null))
-                      }}
-                    >
-                      {t('back')}
-                    </Button>
-                  )
-              }
-            </Col>
-          </Row>
-        </Layout>
+        <section className="padded-section">
+          <div className="container">
+            <Row type="flex" justify="center">
+              <Col xs={24} sm={16}>
+                <Steps current={step}>
+                  <Step title={t('signup')} icon={<LoginOutlined />} />
+                  <Step title={t('membership')} icon={<BookOutlined />} />
+                  <Step title={t('payment')} icon={<CreditCardOutlined />} />
+                </Steps>
+                <br />
+                {
+                  pmForm.success
+                    ? renderWelcome()
+                    : renderStep(step)
+                }
+                {
+                  step !== 2 || pmForm.success
+                    ? null
+                    : (
+                      <Button
+                        icon={
+                          direction === 'ltr'
+                            ? <ArrowLeftOutlined />
+                            : <ArrowRightOutlined />
+                        }
+                        onClick={() => {
+                          setStep(step - 1)
+                          dispatch(memListOnSelect(null))
+                        }}
+                      >
+                        {t('back')}
+                      </Button>
+                    )
+                }
+              </Col>
+            </Row>
+          </div>
+        </section>
       </GeneralLayout>
     </div>
   )

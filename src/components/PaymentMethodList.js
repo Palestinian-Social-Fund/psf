@@ -28,7 +28,7 @@ const PaymentMethodList = (props) => {
     data
   } = props
 
-  const { t } = useLocalization()
+  const { t, dir } = useLocalization()
   const [modal, contextHolder] = Modal.useModal()
 
   const confirmRemove = (pmId) => {
@@ -41,6 +41,12 @@ const PaymentMethodList = (props) => {
       okText: t('yes'),
       cancelText: t('no'),
       maskClosable: true,
+      okButtonProps: {
+        style: {
+          backgroundColor: '#ff4d4f',
+          borderColor: '#ff4d4f'
+        }
+      },
       onOk: () => onRemove(pmId)
     })
   }
@@ -60,7 +66,7 @@ const PaymentMethodList = (props) => {
               { t('make_default') }
             </Menu.Item> 
       }
-      <Menu.Item key="remove">
+      <Menu.Item key="remove" danger>
         { t('remove') }
       </Menu.Item>
     </Menu>
@@ -93,7 +99,7 @@ const PaymentMethodList = (props) => {
             actions={[
               <Dropdown
                 overlay={overlay(pm.id, pm.id === defaultPm)}
-                placement={direction === 'ltr'
+                placement={dir === 'ltr'
                   ? 'bottomRight'
                   : 'bottomLeft'
                 }

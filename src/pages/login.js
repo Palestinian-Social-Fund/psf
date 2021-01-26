@@ -40,17 +40,19 @@ const Login = () => {
         <title>{t('login_hd_title')}</title>
       </Head>
       <GeneralLayout>
-        <Layout className="container">
-          <Row type="flex" justify="center">
-            <Col xs={24} sm={16}>
-              <LoginForm
-                onChange={(a, b) => dispatch(handleChange(a, b))}
-                onSubmit={form => dispatch(handleSubmit(form))}
-                data={loginForm}
-              />
-            </Col>
-          </Row>
-        </Layout>
+        <section className="padded-section">
+          <div className="container">
+            <Row type="flex" justify="center">
+              <Col xs={24} sm={16}>
+                <LoginForm
+                  onChange={(a, b) => dispatch(handleChange(a, b))}
+                  onSubmit={form => dispatch(handleSubmit(form))}
+                  data={loginForm}
+                />
+              </Col>
+            </Row>
+          </div>
+        </section>
       </GeneralLayout>
     </div>
   )

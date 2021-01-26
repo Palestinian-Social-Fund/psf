@@ -29,6 +29,7 @@ const Navbar = (props) => {
 
   const avatarOverlay = (
     <Menu
+      style={{ padding: '15px' }}
       onClick={(item) => {
         if (item.key === 'logout') dispatch(handleLogout());
         else router.replace(`/dashboard/${item.key}`);
@@ -100,7 +101,12 @@ const Navbar = (props) => {
               </>
             )}
             {user.auth && (
-              <Menu.Item>
+              <Menu.Item
+                style={{
+                  marginRight: '0',
+                  marginLeft: '0'
+                }}
+              >
                 <Dropdown
                   overlay={avatarOverlay}
                   arrow={false}
@@ -111,7 +117,7 @@ const Navbar = (props) => {
                   }
                 >
                   <Avatar style={{ backgroundColor: '#87d068' }} size="large">
-                    A
+                    { user.email[0].toUpperCase() }
                   </Avatar>
                 </Dropdown>
               </Menu.Item>
