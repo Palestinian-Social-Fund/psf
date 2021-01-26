@@ -10,7 +10,9 @@ const layout = {
 }
 
 const tailLayout = {
-  wrapperCol: { offset: 6, span: 18 },
+  wrapperCol: {
+    sm: { span: 24 }
+  }
 }
 
 const ResetPasswordForm = (props) => {

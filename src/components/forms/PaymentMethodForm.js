@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Typography, Space, Form, Input, Button, Select } from 'antd'
+import { Card, Typography, Space, Divider, Form, Input, Button, Select } from 'antd'
 import { LockFilled } from '@ant-design/icons'
 import { loadStripe } from '@stripe/stripe-js'
 import {
@@ -17,14 +17,13 @@ const { Title } = Typography
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK)
 
 const layout = {
-  labelCol: { span: 6 },
-  wrapperCol: { span: 18 }
+  labelCol: { span: 24 },
+  wrapperCol: { span: 24 }
 }
 
 const tailLayout = {
   wrapperCol: {
-    sm: { offset: 0, span: 24 },
-    md: { offset: 6, span: 18 }
+    sm: { span: 24 }
   }
 }
 
@@ -60,6 +59,7 @@ const Body = (props) => {
           initialValues={{ remember: true }}
           fields={fields}
           size="large"
+          layout="vertical"
           onValuesChange={onChange}
           onFinish={async (form) => {
             form.cardElement = elements.getElement(CardElement)
@@ -112,12 +112,18 @@ const Body = (props) => {
             <CardElement />
           </Form.Item>
 
-          <Form.Item {...tailLayout}>
+          <Divider />
+
+          <Form.Item
+            {...tailLayout}
+            className="mb-0"
+          >
             <Button
               type="primary"
               htmlType="submit"
               disabled={!stripe}
-              loading={loading}>
+              loading={loading}
+              block>
               <LockFilled /> { btnTitle }
             </Button>
           </Form.Item>

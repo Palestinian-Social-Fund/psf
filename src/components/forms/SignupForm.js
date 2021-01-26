@@ -8,14 +8,14 @@ import validateEmail from 'lib/validateEmail'
 const { Title, Text } = Typography
 
 const layout = {
-  labelCol: { span: 6 },
-  wrapperCol: { span: 18 }
+  labelCol: { span: 7 },
+  wrapperCol: { span: 17 },
 }
 
 const tailLayout = {
   wrapperCol: {
     sm: { offset: 0, span: 24 },
-    md: { offset: 6, span: 18 }
+    md: { offset: 7, span: 17 }
   }
 }
 
