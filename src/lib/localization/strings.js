@@ -11,7 +11,7 @@ const strings = {
     // Home page
     home_header_title: 'Home - Palestinian Social Fund',
     home_splash_title: 'Support the framework for Palestinian economic independence',
-    home_splash_content: 'The Palestinian Social Fund is a non-profit organization that invest its crowdsourced funds in revitalizing the Palestinian economy one village at a time.',
+    home_splash_content: 'The Palestinian Social Fund is a non-profit organization that invests its crowdsourced funds in revitalizing the Palestinian economy one village at a time.',
     home_value1_title: 'Self-sufficiency',
     home_value1_content: 'Lifting our dependence on imports and building independent villages through localized production.',
     home_value2_title: 'Cooperativism',
