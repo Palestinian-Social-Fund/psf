@@ -182,7 +182,7 @@ const Signup = () => {
                     : (
                       <Button
                         icon={
-                          direction === 'ltr'
+                          dir === 'ltr'
                             ? <ArrowLeftOutlined />
                             : <ArrowRightOutlined />
                         }

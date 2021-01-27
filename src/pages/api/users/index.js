@@ -34,6 +34,7 @@ handler.post(async (req, res) => {
   const [savedUser, error] = await handleAsync(newUser.save())
   if (error) throw error
 
+  console.log(error);
   res.json(handleSuccess(session(savedUser)))
 })
 
