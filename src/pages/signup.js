@@ -146,7 +146,7 @@ const Signup = () => {
           <Button
             type="primary"
             key="dashboard"
-            href={`/${locale}/dashboard/profile`}
+            href="/dashboard/profile"
           >
             { t('view_dashboard') }
           </Button>
