@@ -13,11 +13,9 @@ const MembershipSettings = (props) => {
 
   const { t, dir } = useLocalization()
 
-  const subIsActive = (data.sub &&
+  const subIsActive = !(data.sub &&
     data.sub.pause_collection &&
     data.sub.pause_collection.behaviour)
-      ? true
-      : false
 
   return (
     <Card>
